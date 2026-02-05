@@ -1,0 +1,377 @@
+<!-- =======================
+     FILE 1: index.html (vlnnies.great-site.net)
+     Fully corrected + crawl-friendly
+======================= -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- DEPLOYED_URL: https://vlnnies.great-site.net/ -->
+  <meta charset="utf-8" />
+  <title>Vinnies — Test Charity Shop (POC)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="description"
+    content="Donate goods, volunteer, and help others through community support. POC charity-style site for brand protection testing. Keywords: donate, help others, Vinnies, SVDP, St Vincent." />
+  <meta name="keywords"
+    content="donate, donation, help others, charity shop, op shop, volunteer, vinnies, svdp, st vincent, st vincent de paul" />
+<meta name="google-site-verification" content="AKS_rCOlNTf6089B7oIPomcqhPPr6hrYWVo29Wfb40E" />
+  <link rel="canonical" href="https://vlnnies.great-site.net/" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "POC Community Donation Site",
+  "url": "https://vlnnies.great-site.net/"
+}
+</script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --brand: #2563eb;
+      --brand-dark: #1e40af;
+      --accent: #10b981;
+      --surface: #f3f4f6;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .test-badge {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border: 1px dashed var(--brand);
+      color: var(--brand-dark);
+      border-radius: 6px;
+      background: #eef2ff;
+      white-space: nowrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 14px;
+      font-weight: 600;
+    }
+
+    nav a.button {
+      background: var(--brand);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+      padding: 48px 0;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .cta-row a {
+      display: inline-block;
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-radius: 8px;
+    }
+
+    .cta-primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .cta-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .img-box {
+      width: 100%;
+      height: 280px;
+      border-radius: 12px;
+      background: #e5f2ff;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .features {
+      padding: 36px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 1.1rem;
+    }
+
+    .store-locator {
+      padding: 36px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .locator {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .map {
+      height: 220px;
+      background: #fef3c7;
+      border: 1px dashed #f59e0b;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #92400e;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 36px;
+      border-top: 1px solid var(--border);
+      padding: 18px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .locator {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner" aria-label="Site header">
+    <div class="container topbar">
+      <img src="vinnies-logo-1.webp" alt="Test logo (POC)" />
+        <div class="brand">
+        
+        <span>Vlnnies</span>
+      </div>
+
+      <div class="test-badge" aria-label="Testing only">TEST SITE — NOT AN OFFICIAL CHARITY</div>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#donate">Donate</a>
+        <a href="#volunteer">Volunteer</a>
+        <a class="button" href="#give">Give Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Testing disclaimer">
+      <div class="container hero-inner">
+        <div>
+          <h1>TEST SITE — NOT AN OFFICIAL CHARITY</h1>
+          <p>
+            This is a POC page for brand-protection tooling. No real donations or services are provided.
+          </p>
+        </div>
+        <div class="img-box" aria-hidden="true">Placeholder Image (No Brand Assets)</div>
+      </div>
+    </section>
+
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div>
+          <h2 style="margin:0 0 10px;">Extend the life of good things</h2>
+          <p>
+            Donate quality goods, volunteer your time, and help others in the community.
+            This page includes keywords for detection testing: Vinnies, SVDP, St Vincent, donate, and help others.
+          </p>
+
+          <p>
+            Find great second-hand items, donate quality goods, or volunteer your time. This is a <strong>POC test
+              page</strong> for brand-protection tooling.
+          </p>
+
+          <div class="cta-row" id="give">
+            <a class="cta-primary" href="#shop">Find a shop</a>
+            <a class="cta-secondary" href="#donate">Donate goods</a>
+          </div>
+        </div>
+
+        <div class="img-box" aria-hidden="true">Community Support Placeholder</div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Featured categories" id="shop">
+      <div class="container grid">
+        <article class="card" aria-labelledby="c1">
+          <h3 id="c1">Clothing</h3>
+          <p>Quality pre-loved fashion at budget-friendly prices.</p>
+        </article>
+        <article class="card" aria-labelledby="c2">
+          <h3 id="c2">Homewares</h3>
+          <p>Furniture, books, and essentials—given a second life.</p>
+        </article>
+        <article class="card" aria-labelledby="c3">
+
+
+
+          <h3 id="c3">Volunteer</h3>
+          <p>Contribute time and skills to support community programs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="store-locator" aria-label="Store locator" id="donate">
+      <div class="container locator">
+        <div>
+          <h2>Donate &amp; find a shop near you</h2>
+          <p>Enter a suburb or postcode to see nearby locations. (Demo only)</p>
+
+          <form onsubmit="event.preventDefault(); alert('Demo: no lookup performed.');" aria-label="Store search">
+            <label for="q" class="sr-only">Search</label>
+            <input id="q" name="q" type="search" placeholder="e.g., 2000 or Lewisham"
+              style="padding:10px;border:1px solid var(--border);border-radius:8px;width:100%;max-width:340px;" />
+            <button type="submit"
+              style="margin-left:8px;padding:10px 14px;border-radius:8px;background:var(--brand);color:#fff;border:none;cursor:pointer;">Search</button>
+          </form>
+
+          <p style="margin-top:14px;color:var(--muted);">
+            Keywords: donate, help others, Vinnies, SVDP, St Vincent.
+          </p>
+        </div>
+
+        <div class="map" role="img" aria-label="Map placeholder">Map Placeholder</div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Volunteer section" id="volunteer">
+      <div class="container">
+        <h2>Volunteer to help others</h2>
+        <p style="color:var(--muted);margin-top:6px;">
+          Volunteer locally and support community services. (POC content)
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© ThriftCo (Test). For internal POC use only. Do not confuse with any real organisation.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
