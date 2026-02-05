@@ -1,0 +1,284 @@
+<!-- =======================
+     FILE 2: index.html (auscharity.gt)
+     Cleaned mhtml artifacts + fixed structure + crawl-friendly
+======================= -->
+<!doctype html>
+<html lang="en-AU">
+
+<head>
+  <!-- DEPLOYED_URL: https://auscharity.gt/ -->
+  <meta charset="utf-8" />
+  <title>GoodFinds — Test Op Shop (POC)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="description"
+    content="Donate goods, volunteer, and help others through community support. POC charity-style site for brand protection testing. Keywords: donate, help others, Vinnies, SVDP, St Vincent." />
+  <meta name="keywords"
+    content="donate, donation, help others, charity shop, op shop, volunteer, vinnies, svdp, st vincent, st vincent de paul" />
+
+  <link rel="canonical" href="https://auscharity.gt/" />
+<meta name="google-site-verification" content="JSaleRc-gO9m5WhTvUzIaY46Fxruomxe9hGhdVbicp0" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "POC Community Donation Site",
+  "url": "https://auscharity.gt/"
+}
+</script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --brand: #0ea5e9;
+      --brand-dark: #0369a1;
+      --surface: #f8fafc;
+      --border: #e5e7eb;
+      --danger: #ef4444;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .test {
+      color: var(--danger);
+      border: 1px dashed var(--danger);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: .8rem;
+      white-space: nowrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 14px;
+      font-weight: 700;
+    }
+
+    nav a.button {
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .hero {
+      padding: 38px 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: 1.8rem;
+    }
+
+    .hero p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .tile {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .ph {
+      height: 140px;
+      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      font-weight: 700;
+    }
+
+    .tile .cap {
+      padding: 12px;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .notice {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 16px 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 1000px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container bar">
+      <img src="Logo.avif" alt="Test logo (POC)" />
+      <div class="brand">
+        <span>GoodFinds</span>
+      </div>
+
+      <div class="test">POC TEST — NOT AFFILIATED</div>
+
+      <nav aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#donate">Donate</a>
+        <a class="button" href="#stores">Find a store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Testing disclaimer">
+      <div class="container">
+        <h1>TEST SITE — NOT AN OFFICIAL CHARITY</h1>
+        <p>This interface is built for internal brand-protection testing. No real donations are accepted here.</p>
+        <p>
+          Donate, volunteer, and help others — POC content for brand protection testing (keywords: Vinnies, SVDP, St
+          Vincent).
+        </p>
+        <a class="btn btn-primary" href="#stores">Find a store</a>
+        <a class="btn btn-outline" href="#donate" style="margin-left:10px;">Donate goods</a>
+        <p class="notice">Tip: Use your detection stack to flag charity-like UX patterns (domain, CTAs, wording).</p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Featured products (mock)" id="shop">
+      <div class="grid" role="list">
+        <article class="tile" role="listitem" aria-labelledby="p1">
+          <div class="ph" aria-hidden="true">Image</div>
+          <div class="cap"><span id="p1">Vintage Jacket</span><strong>$25</strong></div>
+        </article>
+        <article class="tile" role="listitem" aria-labelledby="p2">
+          <div class="ph" aria-hidden="true">Image</div>
+          <div class="cap"><span id="p2">Ceramic Mug Set</span><strong>$8</strong></div>
+        </article>
+        <article class="tile" role="listitem" aria-labelledby="p3">
+          <div class="ph" aria-hidden="true">Image</div>
+          <div class="cap"><span id="p3">Paperback Bundle</span><strong>$10</strong></div>
+        </article>
+        <article class="tile" role="listitem" aria-labelledby="p4">
+          <div class="ph" aria-hidden="true">Image</div>
+          <div class="cap"><span id="p4">Lamp (Pre-loved)</span><strong>$15</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="hero" aria-label="Donate section" id="donate">
+      <div class="container">
+        <h2 style="margin:0 0 6px;">Donate and help others</h2>
+        <p>Donate quality goods or volunteer your time. (POC content)</p>
+        <p class="notice">Keywords: donate, help others, Vinnies, SVDP, St Vincent.</p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Store locations (mock)" id="stores">
+      <h2 style="margin:22px 0 10px;">Find a store</h2>
+      <p class="notice">Demo section only. No real store lookup is performed.</p>
+      <a class="btn btn-primary" href="#shop">Browse items</a>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© GoodFinds (Test). POC only — no official affiliation with any charity or brand.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
